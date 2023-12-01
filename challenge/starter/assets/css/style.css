@@ -1,13 +1,16 @@
+/* get rid of margin and padding for every tag, make all elements have border box */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* make the body have a white background colour */
 body {
     background-color: #d9dcd6;
 }
 
+/* add a different background colour to our header, change the font colour to white so it appears well */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -20,9 +23,12 @@ body {
     font-size: 48px;
 }
 
+/* change the colour of the text inside the seo span tag */
 .header h1 .seo {
     color: #d9dcd6;
 }
+
+/* make the nav appear on the right, with no list stylings and each list element next to each other horizontally */
 
 nav {
     padding-top: 15px;
@@ -50,6 +56,7 @@ p {
     font-size: 16px;
 }
 
+/* make the background image of our hero div, with a fixed height and width, and some bottom margin */
 .hero {
     height: 800px;
     width: 100%;
@@ -58,6 +65,8 @@ p {
     background-size: cover;
     background-position: center;
 }
+
+/* re-usable classes to make some of my elements float left or right */
 
 .float-left {
     float: left;
@@ -69,12 +78,14 @@ p {
     margin-left: 25px;
 }
 
+/* make our main content screen take up 75% of the screen, and make it display of inline-block so it can allow other inline elements to be placed next to it */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* make our benefits aside take up 20% of the screen and also float right so it can go on the right of our content */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -86,55 +97,25 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* made refactoring of stylings to be child elements of parent container rather than individual classes having the exact same style */
+.benefits div {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+.benefits h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+.benefits img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
 
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+.content section {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -143,51 +124,16 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
+.content img {
     max-height: 200px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+.content h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* footer stylings */
 .footer {
     padding: 30px;
     clear: both;
